@@ -7,6 +7,20 @@ public class Product {
 	float price;
 	int qoh;
 	
+	public Product() {
+		
+	}
+	
+	
+	public Product(String name, float price, int qoh) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.qoh = qoh;
+	}
+
+
+
 	public int getId() {
 		return id;
 	}
@@ -52,6 +66,12 @@ public class Product {
 		if (id != other.id)
 			return false;
 		return true;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", qoh=" + qoh + "]";
 	}
 	
 	
